@@ -26,8 +26,6 @@ end
 
 /-
 Theorem 3: (Euclid's First Theorem) If p is prime, and p|ab, then p|a or p|b.
-
-  This theorem is stated without proof in Chapter 1. We formalize the proof in Chapter 2.
 -/
 theorem euclid_first {p a b : ℕ} (q : nat.prime p) : p ∣ a * b → p ∣ a ∨ p ∣ b :=
 begin
@@ -36,8 +34,6 @@ end
 
 /-
 Theorem 4: (Euclid's Second Theorem) The number of primes is infinite. 
-
-  This theorem stated without proof in Chapter 1. We formalize the proof in Chapter 2. 
 -/
 theorem euclid_second : ∀ N, ∃ p ≥ N, prime p :=
 begin
